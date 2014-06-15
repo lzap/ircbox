@@ -48,3 +48,13 @@ Can be done in three simple steps:
 Since Go compiles to static binaries by default, you can copy the executable
 to your server and use it directly.
 
+Known bugs
+----------
+
+It is sometimes not possible to terminate the process with Ctrl+c. I am not
+cleanly shutting down goroutines.
+
+License and copyright
+---------------------
+
+GNU GPL v2+ / (c) 2014 Copyright Lukáš Zapletal
