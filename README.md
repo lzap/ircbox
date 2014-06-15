@@ -31,8 +31,10 @@ Download
 
 Linux 64bit binary with no dependencies (other than libc and libpthread) can
 be downloaded *from this git repository*. Yes, I do that, because when I need
-it, I don't want to install Go language to compile it from sources. Speaking
-about...
+it, I don't want to install Go language to compile it from sources.
+
+    $ wget --no-check-certificate -O /usr/local/bin/ircbox https://github.com/lzap/ircbox/raw/master/ircbox-linux64
+    $ chmod +x /usr/local/bin/ircbox
 
 Compilation
 -----------
