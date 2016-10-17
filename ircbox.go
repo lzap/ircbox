@@ -17,7 +17,7 @@ import "regexp"
 func main() {
 	server := flag.String("server", "", "IRC server and port (e.g. irc.xxx.redhat.com:6667")
 	nick := flag.String("nick", "", "nickname to give shell to")
-	max_lines := flag.Int("max-lines", 20, "maximum lines returned to prevent flooding")
+	max_lines := flag.Int("max-lines", 1000, "maximum lines returned to prevent flooding")
 	flag.Parse()
 
 	if !regexp.MustCompile(`^.*:\d+$`).MatchString(*server) {
